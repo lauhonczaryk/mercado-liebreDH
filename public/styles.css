@@ -40,9 +40,12 @@ p{
 header{
     background-color: #EAC926;
 }
-
-header .logo,
-header .form{
+.navcontainer ul{
+    list-style-type: none;
+    text-decoration: none;
+   color: #000;
+}
+header .logo, header .form{
     width: 50%;
 }
 
@@ -57,28 +60,32 @@ header .form{
 }
 header nav ul{
     font-size: 12px;
-    margin-left: 20px;
+    margin-left: 10px;
+ 
+}
+.navcontainer{
+    display: flex;
 }
 
-.boxheader nav ul{
-    list-style-type: none;
-     text-decoration: none;
-    color: #000;
+nav ul .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+nav ul .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
 
 header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
     width: 10%;
+    text-align: center;
 }
 
 div.burger-menu{
@@ -102,8 +109,12 @@ div.burger-menu i{
 .last-visit .products, .offers .products{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
-
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+}
 #price{
     font-size: 18px;
     width: 30%;
@@ -153,16 +164,14 @@ main section article i,
     color: #39b54a;
 }
 
-main section div article i{
+main section .products i{
     display: block;
-    font-size: 16px;
     padding: 5px;
     width: 30px;
     height: 30px;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: absolute;
     right: 20px;
     top: -15px;
 }
@@ -188,16 +197,59 @@ article div.main-article{
     position: relative;
     padding: 15px;
 }
-main section article:hover{
+.articles:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-main section article:hover .description{
+main section article:hover #productname{
     display: block;
+    color: #666;
 }
-
-.login input[type='submit']:hover,
-.register input[type='submit']:hover{
+.button:hover {
     background-color: #0022AA;
+}
+.register, .login {
+   margin-left: 150px;
+   margin-right: 150px;
+}
+.register input, .login input{
+    width:100%;
+    border: none;
+    margin: 6px;
+    padding: 6px;
+}
+.categories input{
+    text-align: left;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    padding: 20px;
+    border:1px solid #666;
+    margin: 10px;
+
+}
+footer {
+    text-align: center;
+    color: #666;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    }
+footer h2 {
+        font-size: 16px;
+    }
+    footer i{
+       color: #0044AA;
+       width: 200px;
+    }
+.footer1, .footer2, .footer3 {
+    padding: 25px;
+}
+#copyright {
+    text-align: left;
+
 }
 
 @media (min-width: 361px){
