@@ -6,81 +6,94 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a
 */
-*{
+* {
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
 
-h3{
+h3 {
     font-size: 24px;
 }
 
-p{
+p {
     font-size: 12px;
 }
 
-.boxheader{
+.boxheader {
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
 }
 
-.boxheader p{
+.boxheader p {
     width: 100%;
     text-align: center;
     margin-top: 10px;
 }
 
-header{
+header {
     background-color: #EAC926;
 }
-.navcontainer ul li{
+
+.navcontainer ul a {
     list-style-type: none;
     text-decoration: none;
-   color: #000;
-   padding: 10px;
+    color: #000;
+    padding: 10px;
 }
-header .logo, header .form{
+
+header .logo,
+header .form {
     width: 50%;
 }
 
-header div.logo{
+header div.logo {
     padding: 10px;
 }
-header .form{
+
+header .form {
     display: flex;
     align-items: center;
     padding: 2px;
     font-size: 11px;
 }
-header nav ul{
+
+header nav ul {
     font-size: 12px;
     margin-left: 10px;
- 
+
 }
-.navcontainer{
+
+.navcontainer {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.right{
+.right {
     display: flex;
-    
-}
-.left{
-    display: flex;
-    
+
 }
 
+.left {
+    display: flex;
 
-header .form .submit{
+}
+.form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 80%;
+    text-align: center;
+}
+
+header .form .submit {
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
@@ -88,11 +101,11 @@ header .form .submit{
     text-align: center;
 }
 
-div.burger-menu{
+div.burger-menu {
     text-align: center;
 }
 
-div.burger-menu i{
+div.burger-menu i {
     background-color: #0044AA;
     border-radius: 5px;
     color: #FFF;
@@ -103,68 +116,72 @@ div.burger-menu i{
     width: 40px;
 }
 
-.productimg  {
+.productimg {
     width: 200px;
 }
-.last-visit .products, .offers .products{
+
+.last-visit .products,
+.offers .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.articles{
+
+.articles {
     display: flex;
     flex-wrap: wrap;
 }
-#price{
+
+#price {
     font-size: 18px;
     width: 30%;
 }
 
-#discount{
+#discount {
     width: 70%;
     color: #39b54a;
 }
 
 #discount,
-#productname{
+#productname {
     font-size: 16px;
     font-weight: normal;
 }
 
 h3,
-#productname{
+#productname {
     color: #666;
 }
 
-#productname{
+#productname {
     display: none;
     margin-top: 20px;
 }
 
-section.banner img{
+section.banner img {
     width: 100%;
 }
 
-main{
+main {
     width: 90%;
     margin: 0 auto;
 }
 
-main section article{
-    background-color: #fff;    
+main section article {
+    background-color: #fff;
     margin: 10px 0px;
 }
 
-main section article img{
+main section article img {
     width: 100%;
 }
 
 main section article i,
-#productname{
+#productname {
     color: #39b54a;
 }
 
-main section .products i{
+main section .products i {
     display: block;
     padding: 5px;
     width: 30px;
@@ -176,19 +193,19 @@ main section .products i{
     top: -15px;
 }
 
-main section h3{
+main section h3 {
     margin: 20px 0px;
 }
 
-main section div.products article i{
+main section div.products article i {
     transition: transform 1s;
 }
 
-main section div.products article:hover i{
+main section div.products article:hover i {
     transform: rotate(-90deg);
 }
 
-article div.main-article{
+article div.main-article {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -197,82 +214,97 @@ article div.main-article{
     position: relative;
     padding: 15px;
 }
-.articles:hover{
+
+.articles:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-main section article:hover #productname{
+
+main section article:hover #productname {
     display: block;
     color: #666;
 }
+
 .button:hover {
     background-color: #0022AA;
 }
-.register, .login {
-   margin-left: 150px;
-   margin-right: 150px;
+
+.register,
+.login {
+    margin-left: 150px;
+    margin-right: 150px;
 }
-.register input, .login input{
-    width:100%;
+
+.register input,
+.login input {
+    width: 100%;
     border: none;
     margin: 6px;
     padding: 6px;
 }
-.categories input{
-    text-align: left;
+.inputleft input{
+width: 10%
 }
 .buttons {
     display: flex;
     justify-content: center;
 }
+
 .button {
     padding: 20px;
-    border:1px solid #666;
+    border: 1px solid #666;
     margin: 10px;
 
 }
+
 footer {
     text-align: center;
     color: #666;
     margin-left: 10px;
     margin-right: 10px;
     background-color: white;
-    }
+}
+
 footer h2 {
-        font-size: 16px;
-    }
-    footer i{
-       color: #0044AA;
-       width: 200px;
-    }
-.footer1, .footer2, .footer3 {
+    font-size: 16px;
+}
+
+footer i {
+    color: #0044AA;
+    width: 200px;
+}
+
+.footer1,
+.footer2,
+.footer3 {
     padding: 25px;
 }
+
 #copyright {
     text-align: left;
 
 }
 
-@media (min-width: 361px){
-    main section div.products{
+@media (min-width: 361px) {
+    main section div.products {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
     }
-    
-    main section div.products article{
+
+    main section div.products article {
         width: 45%;
     }
 
     .price,
-    .discount{
+    .discount {
         width: 50%;
     }
 }
 
-@media (min-width: 769px){
-    main section div.products article{
+@media (min-width: 769px) {
+    main section div.products article {
         width: 22%;
     }
 }
