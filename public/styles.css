@@ -40,10 +40,11 @@ p{
 header{
     background-color: #EAC926;
 }
-.navcontainer ul{
+.navcontainer ul li{
     list-style-type: none;
     text-decoration: none;
    color: #000;
+   padding: 10px;
 }
 header .logo, header .form{
     width: 50%;
@@ -65,18 +66,17 @@ header nav ul{
 }
 .navcontainer{
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
-nav ul .right{
+.right{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     
 }
-nav ul .left{
+.left{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    
 }
 
 
